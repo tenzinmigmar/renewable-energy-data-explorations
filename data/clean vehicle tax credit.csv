@@ -1,0 +1,120 @@
+Importance of the Federal Tax Credit: Clean Vehicle Rebate Project Data Used in 2020–21 Analyses,,
+,,
+Contributors,,
+,"John Anderson, Brett Williams, and Keir Havel",
+,,
+Summary of 2020–21 analyses of the importance of the federal tax credit,,
+,"Analyses examined characteristics associated with participants in the Clean Vehicle Rebate Project who found the tax credit extremely important in making it possible to acquire an EV -- termed ""FTC Extreme"" consumers. Characteristics were examined using descriptive statistics and binary logistic regression. Dominance analysis was performed with parsimonious versions of logistic regression models to rank-order importance of significant factors.  For an example of precursor analysis, see: https://doi.org/10.5281/zenodo.4021407",
+,,
+Survey Data Description,,
+,"These data are from a survey of participants in the California's Clean Vehicle Rebate Project, a statewide consumer cash rebate for the purchase or lease of a qualifying clean vehicle. Participants are invited to complete the survey once their rebate application is approved, and a reminder is sent when the rebate is sent.  For more information, see cleanvehiclerebate.org",
+,"Technology Types: Eligible vehicles included in the dataset are: plug-in hybrid electric vehicles (PHEVs) and battery electric vehicles (BEVs). Vehicles qualifying for the regulatory category BEVx receive the same incentive as BEVs. They are grouped with BEV applications and survey responses in this file. BEVx are often grouped with PHEVs in other data sources, such as the Auto Alliance's Advanced Technology Vehicle Sales Dashboard (https://autoalliance.org/energy-environment/advanced-technology-vehicle-sales-dashboard/).",
+,,
+Weighting and Representativeness,,
+,"Proportional iterative raking was used to make the survey data more representative of the program population along the dimensions vehicle technology type, vehicle model, and county. The application data used to calculate the strata used in the weighting were filtered to exclude applications in strata for which no corresponding survey responses were collected: ",
+,,
+,Application data filters applied: ,
+,- Fleets removed,
+,"- Zero emission motorcycles, non-highway-capable neighborhood electric vehicles, and hydrogen fuel-cell electric vehicles removed",
+,- Leases removed,
+,- Purchases occurring outside the date range covered in the survey edition removed,
+,"- Three models lacking a survey response were removed (Mercedes-Benz 250e, Honda Clarity Electric, Cadillac ELR)",
+,- One county lacking a survey response removed (Lassen),
+,"Note: because CVRP applicants have up to 18 months to submit an application after purchasing their vehicle, a relatively small number of additional applications may have been received after the application data were collected.",
+,,
+Data Summary,,
+,Number of respondents in the CVRP Consumer Survey 2016–17 and 2017–18 Edition datasets,"13,876"
+,Number of applications the survey responses are weighted to represent,"66,263"
+,Vehicle types,"PHEV, BEV (incl. BEVx)"
+,Vehicle purchase dates,11/1/2016–12/31/2018
+,Application approved dates,11/15/2016–4/5/2019
+,Survey administration dates,11/1/2016–4/7/2019
+,,
+Survey Questions,,
+,,
+Importance of the Federal Tax Credit (FTC) in Making It Possible to Adopt Question,,
+,How important were each of the following factors in making it possible for you to acquire your clean vehicle? Federal tax incentives,
+,Response Option,Group
+,Not applicable,Excluded
+,Not at all important,Not FTC extreme
+,Slightly important,
+,Moderately important,
+,Very important,"Filtered out of logistic regression, but included in these data"
+,Extremely important,FTC Extreme
+,,
+Race/Ethnicity Question,,
+,How do you prefer to describe your racial/ethnic identity? [check all that apply]*,
+,Response Options,
+,American Indian or Alaska Native,
+,Black or African American,
+,East Asian,
+,Latino(a) or Hispanic,
+,Middle Eastern,
+,Native Hawaiian or other Pacific Islander,
+,South Asian,
+,White or Caucasian,
+,"Other, please specify::",
+,Prefer not to answer,
+,,
+Age Question,,
+,What is your age?*,
+,Response Option,Group
+,16-20,Under 50
+,21-29,
+,30-39,
+,40-49,
+,50-59,Over 50
+,60-69,
+,70-79,
+,80+,
+,Prefer not to answer,Prefer not to answer
+,,
+Household Income Question,,
+,What is your current annual gross household income from all sources (i.e. before taxes)?*,
+,Response Option,Group
+,"Less than $25,000",Under $100k
+,"$25,000 to $49,999",
+,"$50,000 to $74,999",
+,"$75,000 to $99,999",
+,"$100,000 to $124,999",Over $100k
+,"$125,000 to $149,999",
+,"$150,000 to $174,999",
+,"$175,000 to $199,999",
+,"$200,000 to $249,999",
+,"$250,000 to $299,999",
+,"$300,000 to $349,999",
+,"$350,000 to $399,999",
+,"$400,000 to $449,999",
+,"$450,000 to $499,999",
+,"$500,000 or more",
+,Prefer Not to Answer,Prefer Not to Answer
+,,
+Sex/Gender Identification Question,,
+,Please indicate your gender:*,
+,Response Options,
+,2016–17 edition,2017–18 edition
+,Male,Male
+,Female,Female
+,,Transgender
+,,Not listed
+,Prefer not to answer,Prefer not to answer
+,,
+Household Education Question,,
+,What is the highest level of education someone in your household has completed?*,
+,Response Option,Group
+,12th grade or less,Other than Bachelor's or postgraduate degree
+,High school graduate or equivalent,
+,"Some college, no degree",
+,Associate degree,
+,Bachelor's degree,Bachelor's or postgraduate
+,Postgraduate degree,
+,Prefer not to answer,Prefer not to answer
+,,
+Own/Rent Residence Question,,
+,Do you own or rent your residence?*,
+,Response Options,
+,Own,
+,Rent,
+,Prefer not to answer,
+,,
+*,"indicates ""required"" survey question (but usually with a ""Prefer not to answer"" option)",
